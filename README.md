@@ -19,6 +19,10 @@ ExecStart=/path/to/command/or/script
 [Install]
 WantedBy=multi-user.target
 ```
+Reload Systemd
+```
+sudo systemctl daemon-reload
+```
 Now enable the service
 ```
 sudo systemctl enable goodcommand.service
